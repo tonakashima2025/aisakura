@@ -1,0 +1,368 @@
+@import "settings";
+@import "functions";
+
+/* account */
+#account-business {
+  @include header-padding;
+  .header-img {
+    padding-top: 7.5rem;
+    background: url("../img/main-visual/sakura-account.jpg") repeat center;
+  }  
+  .headline-inner {
+    padding: 0 7.5%;
+    background: rgba(0,0,0,0.5);
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      text-align: left;
+      &:after {
+        content: "- SERVICES -";
+        font-size: 2.0rem;
+        padding-left: 2.0rem;
+        vertical-align: middle;
+      }
+    }
+  }
+  .inner {
+    .account-service {
+      .inheritance,.medical,.other {
+        margin-bottom: 5.0rem;
+        h2 {
+          font-family: 'Noto Serif JP', serif;
+          margin-bottom: 2.0rem;
+          position: relative;
+          &:after {
+            content: "";
+            position: absolute;
+            background: pink;
+            width: 6.0rem;
+            height: 6.0rem;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            z-index: -1;
+          }
+        }
+        .business-wrapper {
+          @extend .flex;
+          .business {
+            width: 33.33333%;
+            padding: 1.66666%;
+            .bz-ttl {
+              margin-bottom: 1.0rem;
+              text-align: center;
+              h3 {
+                display: inline-block;
+                position: relative;
+                &:before {
+                  content: "";
+                  position: absolute;
+                  background: pink;
+                  width: 4.5rem;
+                  height: 3.0rem;
+                  border-radius: 50%;
+                  top: 50%;
+                  left: -1.5rem;
+                  -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  z-index: -1;
+                }
+              }
+            }
+            .bz-img {
+              display: inline-block;
+              width: 100%;
+              height: 20.0rem;
+              margin-bottom: 1.0rem;
+            }
+            .bz-txt {
+              margin-bottom: 1.0rem;
+              h4 {
+                margin-bottom: 1.0rem;
+                text-align: left;
+              }
+              ul {
+                margin-bottom: 1.0rem;
+              }
+              p {
+                margin-bottom: 1.0rem;
+              }
+            }
+          }
+        }
+      }
+      .other {
+        .business-wrapper.flex {
+          @extend .flex;
+        }
+      }
+    }
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    tr th,
+    tr td {
+      border: 0.1rem solid #333;
+    }
+  }
+}
+#account-price {
+  .headline-inner {
+    padding: 0 7.5%;
+    background: rgba(0,0,0,0.5);
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      text-align: left;
+      &:after {
+        content: "- PRICE -";
+        font-size: 2.0rem;
+        padding-left: 2.0rem;
+        vertical-align: middle;
+      }
+    }
+  }
+  .account-price-inner {
+    @extend .inner;
+    padding-top: 2.0rem !important;
+    padding-bottom: 2.0rem !important;
+    p {
+      margin-bottom: 0.5rem;
+    }
+    a {
+      display: inline-block;
+      padding: 0 0.75rem;
+      color: #FFFFFF;
+      border-radius: 0.5rem;
+      background-color: #df5656;
+    }
+  }
+}
+#account-business {
+  .inner {
+    .account-service {
+      .other {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* pharmacy */
+/* legal */
+.businesses {
+  @include header-padding;
+  .header-img {
+    padding-top: 7.5rem;
+    background-size: cover;
+  }    
+  .headline-inner {
+    padding: 0 7.5%;
+    background: rgba(0,0,0,0.5);
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      text-align: left;
+      &:after {
+        content: "- SERVICES -";
+        font-size: 2.0rem;
+        padding-left: 2.0rem;
+        vertical-align: middle;
+      }
+    }
+  }
+  .inner {
+    .service {
+      .business-wrapper {
+        @extend .flex;
+        .business {
+          width: 33.33333%;
+          padding: 1.66666%;
+          .bz-ttl {
+            margin-bottom: 1.0rem;
+            text-align: center;
+            h3 {
+              display: inline-block;
+              position: relative;
+              &:before {
+                content: "";
+                position: absolute;
+                width: 4.5rem;
+                height: 3.0rem;
+                border-radius: 50%;
+                top: 50%;
+                left: -1.5rem;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                z-index: -1;
+              }
+            }
+          }
+          .bz-img {
+            display: inline-block;
+            width: 100%;
+            height: 20.0rem;
+            margin-bottom: 1.0rem;
+          }
+          .bz-txt {
+            margin-bottom: 1.0rem;
+            h4 {
+              margin-bottom: 1.0rem;
+              text-align: left;
+            }
+            ul {
+              margin-bottom: 1.0rem;
+            }
+            p {
+              margin-bottom: 1.0rem;
+            }
+          }
+        }
+      }
+      .business-wrapper.flex {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+.price,
+.licence {
+  .headline-inner {
+    padding: 0 7.5%;
+    background: rgba(0,0,0,0.5);
+    h1 {
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      text-align: left;
+      &:after {
+        font-size: 2.0rem;
+        padding-left: 2.0rem;
+        vertical-align: middle;
+      }
+    }
+  }
+  p {
+    margin: 5.0rem;
+    font-size: 3.8rem;
+    color: red;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+.price {
+  .headline-inner {
+    h1 {
+      &:after {
+        content: "- PRICE -";
+      }
+    }
+  }
+}
+
+
+/* pharmacy */
+#pharmacy_business {
+  .header-img {
+    background: url("../img/main-visual/sakura-pharmacy.jpg") repeat center;
+  }
+  .inner {
+    .service {
+      .business-wrapper {
+        .business {
+          &:last-of-type {
+            padding: 1.66666% 0;
+          }
+          .bz-ttl {
+            h3 {
+              &:before {
+                background-color: #a3dca2;
+              }
+            }
+          }
+          .bz-note1 {
+            margin-bottom: 3.0rem;
+            font-size: 1.5rem;
+            .bz-note1-ttl {
+              margin-bottom: 0.8rem;
+              color: red;
+              font-weight: bold;
+            }
+            .bz-note1-txt {
+              padding: 0.8rem 0.8rem;
+              border: 0.1rem solid #2f3132;
+            }
+          }
+          .bz-note2 {
+            padding: 0.8rem 0;
+            font-family: 'Kosugi Maru', sans-serif;
+            font-size: 1.4rem;
+            border: 0.2rem solid #a3dca2;
+            border-radius: 0.75rem;
+            .bz-note2-ttl {
+              margin-bottom: 1.0rem;
+              font-weight: bold;
+              text-align: center;
+            }
+            .bz-note2-txt {
+              padding: 0 0.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#pharmacy-licence {
+  .headline-inner {
+    h1 {
+      &:after {
+        content: "- LICENCE -";
+      }
+    }
+  }
+  .inner {
+    .licence-list {
+      h3 {
+        margin-bottom: 2.0rem;
+        text-align: left;
+      }
+      ul {
+        li {
+          list-style: square inside;
+        }
+      }
+    }
+  }
+}
+
+/* legal */
+#legal_business {
+  .header-img {
+    background: url("../img/main-visual/sakura-legal.jpg") repeat;
+  }  
+  .inner {
+    .service {
+      .business-wrapper {
+        .business {
+          .bz-ttl {
+            h3 {
+              &:before {
+                background-color: #f1ce99;
+              }
+            }
+          }          
+          .bz-txt {
+            h4 {
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

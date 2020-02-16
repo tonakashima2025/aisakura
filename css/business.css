@@ -1,0 +1,516 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lato', 'Noto Sans JP', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #2f3132;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+li.disc {
+  list-style: disc inside;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.inner, #account-price .account-price-inner {
+  max-width: 122.0rem;
+  margin: 0 auto;
+}
+
+.inner:not(:first-of-type), #account-price .account-price-inner:not(:first-of-type) {
+  padding-top: 6.0rem;
+  padding-bottom: 6.0rem;
+}
+
+.flex, #account-business .inner .account-service .inheritance .business-wrapper, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper, #account-business .inner .account-service .medical .business-wrapper, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper, #account-business .inner .account-service .other .business-wrapper, #account-business #account-price .account-price-inner .account-service .other .business-wrapper, #account-price #account-business .account-price-inner .account-service .other .business-wrapper, #account-business .inner .account-service .other .business-wrapper.flex, .businesses .inner .service .business-wrapper, .businesses #account-price .account-price-inner .service .business-wrapper, #account-price .businesses .account-price-inner .service .business-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.br-pc {
+  display: block;
+}
+
+.br-sp {
+  display: none;
+}
+
+.indent {
+  padding-left: 1.0em;
+  text-indent: -1.0em;
+}
+
+.note:before {
+  content: "※";
+  padding-right: 0.1rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.gradation-heading {
+  display: inline-block;
+  width: 35%;
+  margin-bottom: 2.0rem;
+  font-family: 'Kosugi Maru', sans-serif;
+  text-align: left;
+  border-bottom: solid 3px pink;
+  position: relative;
+}
+
+.gradation-heading:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: solid 3px #921b78;
+  bottom: -3px;
+  width: 20%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .inner, #account-price .account-price-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .inner:not(:first-of-type), #account-price .account-price-inner:not(:first-of-type) {
+    padding-top: 4.0rem;
+    padding-bottom: 4.0rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2.0rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  .br-pc {
+    display: none;
+  }
+  .br-sp {
+    display: block;
+  }
+  .gradation-heading {
+    width: 70%;
+  }
+}
+
+/* account */
+#account-business {
+  padding-top: 7.7rem;
+}
+
+#account-business .header-img {
+  padding-top: 7.5rem;
+  background: url("../img/main-visual/sakura-account.jpg") repeat center;
+}
+
+#account-business .headline-inner {
+  padding: 0 7.5%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#account-business .headline-inner h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #fff;
+  text-align: left;
+}
+
+#account-business .headline-inner h1:after {
+  content: "- SERVICES -";
+  font-size: 2.0rem;
+  padding-left: 2.0rem;
+  vertical-align: middle;
+}
+
+#account-business .inner .account-service .inheritance, #account-business #account-price .account-price-inner .account-service .inheritance, #account-price #account-business .account-price-inner .account-service .inheritance, #account-business .inner .account-service .medical, #account-business #account-price .account-price-inner .account-service .medical, #account-price #account-business .account-price-inner .account-service .medical, #account-business .inner .account-service .other, #account-business #account-price .account-price-inner .account-service .other, #account-price #account-business .account-price-inner .account-service .other {
+  margin-bottom: 5.0rem;
+}
+
+#account-business .inner .account-service .inheritance h2, #account-business #account-price .account-price-inner .account-service .inheritance h2, #account-price #account-business .account-price-inner .account-service .inheritance h2, #account-business .inner .account-service .medical h2, #account-business #account-price .account-price-inner .account-service .medical h2, #account-price #account-business .account-price-inner .account-service .medical h2, #account-business .inner .account-service .other h2, #account-business #account-price .account-price-inner .account-service .other h2, #account-price #account-business .account-price-inner .account-service .other h2 {
+  font-family: 'Noto Serif JP', serif;
+  margin-bottom: 2.0rem;
+  position: relative;
+}
+
+#account-business .inner .account-service .inheritance h2:after, #account-business #account-price .account-price-inner .account-service .inheritance h2:after, #account-price #account-business .account-price-inner .account-service .inheritance h2:after, #account-business .inner .account-service .medical h2:after, #account-business #account-price .account-price-inner .account-service .medical h2:after, #account-price #account-business .account-price-inner .account-service .medical h2:after, #account-business .inner .account-service .other h2:after, #account-business #account-price .account-price-inner .account-service .other h2:after, #account-price #account-business .account-price-inner .account-service .other h2:after {
+  content: "";
+  position: absolute;
+  background: pink;
+  width: 6.0rem;
+  height: 6.0rem;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business, #account-business .inner .account-service .medical .business-wrapper .business, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business, #account-business .inner .account-service .other .business-wrapper .business, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business {
+  width: 33.33333%;
+  padding: 1.66666%;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-ttl, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-ttl, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-ttl, #account-business .inner .account-service .medical .business-wrapper .business .bz-ttl, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-ttl, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-ttl, #account-business .inner .account-service .other .business-wrapper .business .bz-ttl, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-ttl, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-ttl {
+  margin-bottom: 1.0rem;
+  text-align: center;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-ttl h3, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-ttl h3, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-ttl h3, #account-business .inner .account-service .medical .business-wrapper .business .bz-ttl h3, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-ttl h3, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-ttl h3, #account-business .inner .account-service .other .business-wrapper .business .bz-ttl h3, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-ttl h3, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-ttl h3 {
+  display: inline-block;
+  position: relative;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-ttl h3:before, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-ttl h3:before, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-ttl h3:before, #account-business .inner .account-service .medical .business-wrapper .business .bz-ttl h3:before, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-ttl h3:before, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-ttl h3:before, #account-business .inner .account-service .other .business-wrapper .business .bz-ttl h3:before, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-ttl h3:before, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-ttl h3:before {
+  content: "";
+  position: absolute;
+  background: pink;
+  width: 4.5rem;
+  height: 3.0rem;
+  border-radius: 50%;
+  top: 50%;
+  left: -1.5rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-img, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-img, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-img, #account-business .inner .account-service .medical .business-wrapper .business .bz-img, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-img, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-img, #account-business .inner .account-service .other .business-wrapper .business .bz-img, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-img, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-img {
+  display: inline-block;
+  width: 100%;
+  height: 20.0rem;
+  margin-bottom: 1.0rem;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-txt, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt, #account-business .inner .account-service .medical .business-wrapper .business .bz-txt, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-txt, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-txt, #account-business .inner .account-service .other .business-wrapper .business .bz-txt, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-txt, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-txt {
+  margin-bottom: 1.0rem;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-txt h4, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt h4, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt h4, #account-business .inner .account-service .medical .business-wrapper .business .bz-txt h4, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-txt h4, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-txt h4, #account-business .inner .account-service .other .business-wrapper .business .bz-txt h4, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-txt h4, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-txt h4 {
+  margin-bottom: 1.0rem;
+  text-align: left;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-txt ul, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt ul, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt ul, #account-business .inner .account-service .medical .business-wrapper .business .bz-txt ul, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-txt ul, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-txt ul, #account-business .inner .account-service .other .business-wrapper .business .bz-txt ul, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-txt ul, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-txt ul {
+  margin-bottom: 1.0rem;
+}
+
+#account-business .inner .account-service .inheritance .business-wrapper .business .bz-txt p, #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt p, #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper .business .bz-txt p, #account-business .inner .account-service .medical .business-wrapper .business .bz-txt p, #account-business #account-price .account-price-inner .account-service .medical .business-wrapper .business .bz-txt p, #account-price #account-business .account-price-inner .account-service .medical .business-wrapper .business .bz-txt p, #account-business .inner .account-service .other .business-wrapper .business .bz-txt p, #account-business #account-price .account-price-inner .account-service .other .business-wrapper .business .bz-txt p, #account-price #account-business .account-price-inner .account-service .other .business-wrapper .business .bz-txt p {
+  margin-bottom: 1.0rem;
+}
+
+#account-business table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#account-business table tr th,
+#account-business table tr td {
+  border: 0.1rem solid #333;
+}
+
+#account-price .headline-inner {
+  padding: 0 7.5%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#account-price .headline-inner h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #fff;
+  text-align: left;
+}
+
+#account-price .headline-inner h1:after {
+  content: "- PRICE -";
+  font-size: 2.0rem;
+  padding-left: 2.0rem;
+  vertical-align: middle;
+}
+
+#account-price .account-price-inner {
+  padding-top: 2.0rem !important;
+  padding-bottom: 2.0rem !important;
+}
+
+#account-price .account-price-inner p {
+  margin-bottom: 0.5rem;
+}
+
+#account-price .account-price-inner a {
+  display: inline-block;
+  padding: 0 0.75rem;
+  color: #FFFFFF;
+  border-radius: 0.5rem;
+  background-color: #df5656;
+}
+
+#account-business .inner .account-service .other, #account-business #account-price .account-price-inner .account-service .other, #account-price #account-business .account-price-inner .account-service .other {
+  margin-bottom: 0;
+}
+
+/* pharmacy */
+/* legal */
+.businesses {
+  padding-top: 7.7rem;
+}
+
+.businesses .header-img {
+  padding-top: 7.5rem;
+  background-size: cover;
+}
+
+.businesses .headline-inner {
+  padding: 0 7.5%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.businesses .headline-inner h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #fff;
+  text-align: left;
+}
+
+.businesses .headline-inner h1:after {
+  content: "- SERVICES -";
+  font-size: 2.0rem;
+  padding-left: 2.0rem;
+  vertical-align: middle;
+}
+
+.businesses .inner .service .business-wrapper .business, .businesses #account-price .account-price-inner .service .business-wrapper .business, #account-price .businesses .account-price-inner .service .business-wrapper .business {
+  width: 33.33333%;
+  padding: 1.66666%;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-ttl, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-ttl, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-ttl {
+  margin-bottom: 1.0rem;
+  text-align: center;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-ttl h3, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-ttl h3, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-ttl h3 {
+  display: inline-block;
+  position: relative;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-ttl h3:before, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-ttl h3:before, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-ttl h3:before {
+  content: "";
+  position: absolute;
+  width: 4.5rem;
+  height: 3.0rem;
+  border-radius: 50%;
+  top: 50%;
+  left: -1.5rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-img, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-img, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-img {
+  display: inline-block;
+  width: 100%;
+  height: 20.0rem;
+  margin-bottom: 1.0rem;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-txt, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-txt, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-txt {
+  margin-bottom: 1.0rem;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-txt h4, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-txt h4, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-txt h4 {
+  margin-bottom: 1.0rem;
+  text-align: left;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-txt ul, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-txt ul, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-txt ul {
+  margin-bottom: 1.0rem;
+}
+
+.businesses .inner .service .business-wrapper .business .bz-txt p, .businesses #account-price .account-price-inner .service .business-wrapper .business .bz-txt p, #account-price .businesses .account-price-inner .service .business-wrapper .business .bz-txt p {
+  margin-bottom: 1.0rem;
+}
+
+.businesses .inner .service .business-wrapper.flex, .businesses #account-business .inner .service .account-service .inheritance .business-wrapper, #account-business .businesses .inner .service .account-service .inheritance .business-wrapper, .businesses #account-business .inner .account-service .inheritance .service .business-wrapper, #account-business .businesses .inner .account-service .inheritance .service .business-wrapper, .businesses .inner .service #account-business #account-price .account-price-inner .account-service .inheritance .business-wrapper, #account-business #account-price .account-price-inner .account-service .inheritance .businesses .inner .service .business-wrapper, .businesses .inner .service #account-price #account-business .account-price-inner .account-service .inheritance .business-wrapper, #account-price #account-business .account-price-inner .account-service .inheritance .businesses .inner .service .business-wrapper, .businesses #account-business .inner .service .account-service .medical .business-wrapper, #account-business .businesses .inner .service .account-service .medical .business-wrapper, .businesses #account-business .inner .account-service .medical .service .business-wrapper, #account-business .businesses .inner .account-service .medical .service .business-wrapper, .businesses .inner .service #account-business #account-price .account-price-inner .account-service .medical .business-wrapper, #account-business #account-price .account-price-inner .account-service .medical .businesses .inner .service .business-wrapper, .businesses .inner .service #account-price #account-business .account-price-inner .account-service .medical .business-wrapper, #account-price #account-business .account-price-inner .account-service .medical .businesses .inner .service .business-wrapper, .businesses #account-business .inner .service .account-service .other .business-wrapper, #account-business .businesses .inner .service .account-service .other .business-wrapper, .businesses #account-business .inner .account-service .other .service .business-wrapper, #account-business .businesses .inner .account-service .other .service .business-wrapper, .businesses .inner .service #account-business #account-price .account-price-inner .account-service .other .business-wrapper, #account-business #account-price .account-price-inner .account-service .other .businesses .inner .service .business-wrapper, .businesses .inner .service #account-price #account-business .account-price-inner .account-service .other .business-wrapper, #account-price #account-business .account-price-inner .account-service .other .businesses .inner .service .business-wrapper, .businesses #account-price .account-price-inner .service #account-business .inner .account-service .other .business-wrapper.flex, #account-business .inner .account-service .other .businesses #account-price .account-price-inner .service .business-wrapper.flex, #account-price .businesses .account-price-inner .service #account-business .inner .account-service .other .business-wrapper.flex, #account-business .inner .account-service .other #account-price .businesses .account-price-inner .service .business-wrapper.flex, .businesses #account-business #account-price .account-price-inner .service .account-service .other .business-wrapper.flex, #account-business .businesses #account-price .account-price-inner .service .account-service .other .business-wrapper.flex, .businesses #account-business #account-price .account-price-inner .account-service .other .service .business-wrapper.flex, #account-business .businesses #account-price .account-price-inner .account-service .other .service .business-wrapper.flex, #account-business #account-price .businesses .account-price-inner .service .account-service .other .business-wrapper.flex, #account-business #account-price .businesses .account-price-inner .account-service .other .service .business-wrapper.flex, .businesses #account-price #account-business .account-price-inner .service .account-service .other .business-wrapper.flex, .businesses #account-price #account-business .account-price-inner .account-service .other .service .business-wrapper.flex, #account-price .businesses #account-business .account-price-inner .service .account-service .other .business-wrapper.flex, #account-price #account-business .businesses .account-price-inner .service .account-service .other .business-wrapper.flex, #account-price .businesses #account-business .account-price-inner .account-service .other .service .business-wrapper.flex, #account-price #account-business .businesses .account-price-inner .account-service .other .service .business-wrapper.flex, .businesses .inner .service .business-wrapper, .businesses #account-price .account-price-inner .service .business-wrapper, #account-price .businesses .account-price-inner .service .business-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price .headline-inner,
+.licence .headline-inner {
+  padding: 0 7.5%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.price .headline-inner h1,
+.licence .headline-inner h1 {
+  font-family: 'Noto Serif JP', serif;
+  color: #fff;
+  text-align: left;
+}
+
+.price .headline-inner h1:after,
+.licence .headline-inner h1:after {
+  font-size: 2.0rem;
+  padding-left: 2.0rem;
+  vertical-align: middle;
+}
+
+.price p,
+.licence p {
+  margin: 5.0rem;
+  font-size: 3.8rem;
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.price .headline-inner h1:after {
+  content: "- PRICE -";
+}
+
+/* pharmacy */
+#pharmacy_business .header-img {
+  background: url("../img/main-visual/sakura-pharmacy.jpg") repeat center;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business:last-of-type, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business:last-of-type, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business:last-of-type {
+  padding: 1.66666% 0;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-ttl h3:before, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-ttl h3:before, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-ttl h3:before {
+  background-color: #a3dca2;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-note1, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-note1, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-note1 {
+  margin-bottom: 3.0rem;
+  font-size: 1.5rem;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-note1 .bz-note1-ttl, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-note1 .bz-note1-ttl, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-note1 .bz-note1-ttl {
+  margin-bottom: 0.8rem;
+  color: red;
+  font-weight: bold;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-note1 .bz-note1-txt, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-note1 .bz-note1-txt, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-note1 .bz-note1-txt {
+  padding: 0.8rem 0.8rem;
+  border: 0.1rem solid #2f3132;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-note2, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-note2, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-note2 {
+  padding: 0.8rem 0;
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 1.4rem;
+  border: 0.2rem solid #a3dca2;
+  border-radius: 0.75rem;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-note2 .bz-note2-ttl, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-note2 .bz-note2-ttl, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-note2 .bz-note2-ttl {
+  margin-bottom: 1.0rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#pharmacy_business .inner .service .business-wrapper .business .bz-note2 .bz-note2-txt, #pharmacy_business #account-price .account-price-inner .service .business-wrapper .business .bz-note2 .bz-note2-txt, #account-price #pharmacy_business .account-price-inner .service .business-wrapper .business .bz-note2 .bz-note2-txt {
+  padding: 0 0.75rem;
+}
+
+#pharmacy-licence .headline-inner h1:after {
+  content: "- LICENCE -";
+}
+
+#pharmacy-licence .inner .licence-list h3, #pharmacy-licence #account-price .account-price-inner .licence-list h3, #account-price #pharmacy-licence .account-price-inner .licence-list h3 {
+  margin-bottom: 2.0rem;
+  text-align: left;
+}
+
+#pharmacy-licence .inner .licence-list ul li, #pharmacy-licence #account-price .account-price-inner .licence-list ul li, #account-price #pharmacy-licence .account-price-inner .licence-list ul li {
+  list-style: square inside;
+}
+
+/* legal */
+#legal_business .header-img {
+  background: url("../img/main-visual/sakura-legal.jpg") repeat;
+}
+
+#legal_business .inner .service .business-wrapper .business .bz-ttl h3:before, #legal_business #account-price .account-price-inner .service .business-wrapper .business .bz-ttl h3:before, #account-price #legal_business .account-price-inner .service .business-wrapper .business .bz-ttl h3:before {
+  background-color: #f1ce99;
+}
+
+#legal_business .inner .service .business-wrapper .business .bz-txt h4, #legal_business #account-price .account-price-inner .service .business-wrapper .business .bz-txt h4, #account-price #legal_business .account-price-inner .service .business-wrapper .business .bz-txt h4 {
+  font-weight: normal;
+}

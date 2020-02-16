@@ -1,0 +1,407 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+@import "settings";
+@import "functions";  
+
+// header
+#header {
+  .header-inner {
+    .hlogo {
+      a {
+        font-size: 2.0rem;
+      }
+    }
+    .hnav {
+      display: none;
+      ul.hnav-list {
+        li.hnav-item {
+          a {
+            &:hover {
+            }
+          }
+          a.active {
+          }          
+        }
+      }
+    }
+    .header-contact {
+      display: none;
+      ul {
+        li {
+          &:first-of-type {
+            a {
+              i {
+              }
+            }
+          }
+          &:last-of-type {
+          }
+        }
+      }
+    }
+  }
+}
+
+/* header-sp */
+#header-sp {
+  display: block;
+}
+
+/* main-visual */
+#main-visual {
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        h1 {
+          width: 95%;
+        }
+        a {
+          padding: 0.5rem 2.0rem;
+          top: 72.5%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
+
+/* footer */
+footer {
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  background-color: #252a2c;
+  color: #fff;
+  .footer-inner {
+    @extend .inner;
+    .column {
+      border-bottom: 0.1rem solid #555555;
+      position: relative;
+      nav {
+        width: 100%;
+        font-size: 1.6rem;
+        padding: 1.0rem 0;
+        float: none;
+        .footer-link {
+          margin-bottom: 1.5rem;
+        }
+      }
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      .footer-contact {
+        padding-right: 2.0rem;
+        padding-bottom: 3.5rem;
+        position: static;
+        right: 0;
+        bottom: 0;
+        ul {
+          li {
+            &:first-of-type {
+              font-size: 2.8rem;
+              a {
+                i {
+                  padding-right: 1.0rem;
+                }
+              }
+            }
+            &:last-of-type {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    p {
+      margin: 1.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+} 
+
+/* account */
+#account-business {
+  .header-img {
+  }  
+  .headline-inner {
+    h1 {
+      &:after {
+        font-size: 1.8rem;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+  .inner {
+    .account-service {
+      .inheritance,.medical,.other {
+        h2 {
+          &:after {
+          }
+        }
+        .business-wrapper {
+          flex-direction: column;
+          .business {
+            width: 100%;
+            .bz-ttl {
+              h3 {
+                &:before {
+                }
+              }
+            }
+            .bz-img {
+            }
+            .bz-txt {
+              h4 {
+              }
+              ul {
+              }
+              p {
+              }
+            }
+          }
+        }
+      }
+      .other {
+      }
+    }
+  }
+  table {
+    tr th,
+    tr td {
+    }
+  }
+}
+#account-price {
+  .headline-inner {
+    h1 {
+      &:after {
+        content: "- PRICE -";
+        font-size: 1.8rem;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+  p {
+  }
+}
+
+/* pharmacy */
+/* legal */
+.businesses {
+  .header-img {
+  }    
+  .headline-inner {
+    h1 {
+      &:after {
+        content: "- SERVICES -";
+        font-size: 1.8rem;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+  .inner {
+    .service {
+      .business-wrapper {
+        flex-direction: column;
+        .business {
+          width: 100%;
+          .bz-ttl {
+            h3 {
+              &:before {
+              }
+            }
+          }
+          .bz-img {
+          }
+          .bz-txt {
+            h4 {
+            }
+            ul {
+            }
+            p {
+            }
+          }
+        }
+      }
+      .business-wrapper.flex {
+      }
+    }
+  }
+}
+.price,
+.licence {
+  .headline-inner {
+    h1 {
+      &:after {
+        font-size: 1.8rem;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+  p {
+  }
+}
+
+/* pharmacy */
+#pharmacy-licence {
+  .headline-inner {
+    h1 {
+      &:after {
+      }
+    }
+  }
+  .inner {
+    .licence-list {
+      h3 {
+      }
+      ul {
+        li {
+          padding-left: 2.0rem;
+          text-indent: -2.0rem;
+        }
+      }
+    }
+  }
+}
+
+/* profile */
+/* access */
+.company {
+  .company-wrapper {
+    h2 {
+      width: 40%;
+      &:after {
+      }
+    }
+  }
+}
+
+/* company */
+#company {
+  .company-wrapper {
+    .profile {
+      .profile-table {
+        table {
+          tr {
+            th,td {
+              display: block; //ここ
+              border-bottom: none; //ここ
+            }
+            th {
+              width: 100%; //ここ
+            }
+          }
+          &:last-of-type { //ここ
+            border-bottom: 1px solid #333;
+          }
+        }
+      }
+    }
+    .vision {
+      .vision-content {
+        .vision-heading {
+        }
+        .vision-txt {
+        }
+      }
+    }
+    .president {
+      .president-message {
+        p {
+        }
+      }
+      .president-table {
+        table {
+          tr {
+            th,td {
+              display: block;
+              border-bottom: none;
+            }
+            th {
+              width: 100%;
+            }
+            &:last-of-type {
+              border-bottom: 1px solid #333;
+            }
+          }
+        }
+      }
+    }
+    .origin {
+      .origin-contents {
+        h4 {
+          margin-bottom: 2.0rem;
+        }
+        .origin-content-wrapper {
+          margin-bottom: 0;
+          display: block;
+          text-align: center;
+          .origin-content {
+            display: block;
+            .origin-img {
+            }
+            .origin-txt {
+              margin: 2.0rem 0;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          background-position: 0 0.45rem;
+        }
+      }
+    }
+  }
+}
+
+/* access */
+#access {
+  .access-wrapper {
+    iframe {
+    }
+    .access-txt {
+      > ul {
+        ul {
+        }
+        > li {
+          &:before {
+          }
+        }
+      }
+    }
+  }
+}
+
+/*contact*/
+#contact {
+  .header-img {
+  }    
+  .headline-inner {
+    h1 {
+      &:after {
+        content: "- CONTACT -";
+        font-size: 1.8rem;
+        padding-left: 1.8rem;
+      }
+    }
+  }
+  .inner {
+    .ct-form {
+      form {
+        input,
+        textarea {
+        }
+        input.ct-btn {
+          &:hover {
+          }
+        }
+      }
+    }
+  }
+}
+
+}

@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  *, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: 'Lato', 'Noto Sans JP', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #2f3132;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2.0rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  ul, li {
+    list-style: none;
+  }
+  li.disc {
+    list-style: disc inside;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  a:hover {
+    opacity: 0.7;
+  }
+  a:link, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+  .inner, footer .footer-inner {
+    max-width: 122.0rem;
+    margin: 0 auto;
+  }
+  .inner:not(:first-of-type), footer .footer-inner:not(:first-of-type) {
+    padding-top: 6.0rem;
+    padding-bottom: 6.0rem;
+  }
+  .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .br-pc {
+    display: block;
+  }
+  .br-sp {
+    display: none;
+  }
+  .indent {
+    padding-left: 1.0em;
+    text-indent: -1.0em;
+  }
+  .note:before {
+    content: "※";
+    padding-right: 0.1rem;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .underline {
+    text-decoration: underline;
+  }
+  .gradation-heading {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 2.0rem;
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align: left;
+    border-bottom: solid 3px pink;
+    position: relative;
+  }
+  .gradation-heading:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #921b78;
+    bottom: -3px;
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (min-width: 320px) and (max-width: 767px) {
+  .inner, footer .footer-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .inner:not(:first-of-type), footer .footer-inner:not(:first-of-type) {
+    padding-top: 4.0rem;
+    padding-bottom: 4.0rem;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 2.0rem;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  .br-pc {
+    display: none;
+  }
+  .br-sp {
+    display: block;
+  }
+  .gradation-heading {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #header .header-inner .hlogo a {
+    font-size: 2.0rem;
+  }
+  #header .header-inner .hnav {
+    display: none;
+  }
+  #header .header-inner .header-contact {
+    display: none;
+  }
+  /* header-sp */
+  #header-sp {
+    display: block;
+  }
+  /* main-visual */
+  #main-visual .swiper-container .swiper-wrapper .swiper-slide h1 {
+    width: 95%;
+  }
+  #main-visual .swiper-container .swiper-wrapper .swiper-slide a {
+    padding: 0.5rem 2.0rem;
+    top: 72.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  /* footer */
+  footer {
+    padding-top: 2.0rem;
+    padding-bottom: 2.0rem;
+    background-color: #252a2c;
+    color: #fff;
+  }
+  footer .footer-inner .column {
+    border-bottom: 0.1rem solid #555555;
+    position: relative;
+  }
+  footer .footer-inner .column nav {
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.0rem 0;
+    float: none;
+  }
+  footer .footer-inner .column nav .footer-link {
+    margin-bottom: 1.5rem;
+  }
+  footer .footer-inner .column:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  footer .footer-inner .column .footer-contact {
+    padding-right: 2.0rem;
+    padding-bottom: 3.5rem;
+    position: static;
+    right: 0;
+    bottom: 0;
+  }
+  footer .footer-inner .column .footer-contact ul li:first-of-type {
+    font-size: 2.8rem;
+  }
+  footer .footer-inner .column .footer-contact ul li:first-of-type a i {
+    padding-right: 1.0rem;
+  }
+  footer .footer-inner .column .footer-contact ul li:last-of-type {
+    font-size: 1.5rem;
+  }
+  footer .footer-inner p {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  /* account */
+  #account-business .headline-inner h1:after {
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+  }
+  #account-business .inner .account-service .inheritance .business-wrapper, #account-business footer .footer-inner .account-service .inheritance .business-wrapper, footer #account-business .footer-inner .account-service .inheritance .business-wrapper, #account-business .inner .account-service .medical .business-wrapper, #account-business footer .footer-inner .account-service .medical .business-wrapper, footer #account-business .footer-inner .account-service .medical .business-wrapper, #account-business .inner .account-service .other .business-wrapper, #account-business footer .footer-inner .account-service .other .business-wrapper, footer #account-business .footer-inner .account-service .other .business-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #account-business .inner .account-service .inheritance .business-wrapper .business, #account-business footer .footer-inner .account-service .inheritance .business-wrapper .business, footer #account-business .footer-inner .account-service .inheritance .business-wrapper .business, #account-business .inner .account-service .medical .business-wrapper .business, #account-business footer .footer-inner .account-service .medical .business-wrapper .business, footer #account-business .footer-inner .account-service .medical .business-wrapper .business, #account-business .inner .account-service .other .business-wrapper .business, #account-business footer .footer-inner .account-service .other .business-wrapper .business, footer #account-business .footer-inner .account-service .other .business-wrapper .business {
+    width: 100%;
+  }
+  #account-price .headline-inner h1:after {
+    content: "- PRICE -";
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+  }
+  /* pharmacy */
+  /* legal */
+  .businesses .headline-inner h1:after {
+    content: "- SERVICES -";
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+  }
+  .businesses .inner .service .business-wrapper, .businesses footer .footer-inner .service .business-wrapper, footer .businesses .footer-inner .service .business-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .businesses .inner .service .business-wrapper .business, .businesses footer .footer-inner .service .business-wrapper .business, footer .businesses .footer-inner .service .business-wrapper .business {
+    width: 100%;
+  }
+  .price .headline-inner h1:after,
+  .licence .headline-inner h1:after {
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+  }
+  /* pharmacy */
+  #pharmacy-licence .inner .licence-list ul li, #pharmacy-licence footer .footer-inner .licence-list ul li, footer #pharmacy-licence .footer-inner .licence-list ul li {
+    padding-left: 2.0rem;
+    text-indent: -2.0rem;
+  }
+  /* profile */
+  /* access */
+  .company .company-wrapper h2 {
+    width: 40%;
+  }
+  /* company */
+  #company .company-wrapper .profile .profile-table table tr th, #company .company-wrapper .profile .profile-table table tr td {
+    display: block;
+    border-bottom: none;
+  }
+  #company .company-wrapper .profile .profile-table table tr th {
+    width: 100%;
+  }
+  #company .company-wrapper .profile .profile-table table:last-of-type {
+    border-bottom: 1px solid #333;
+  }
+  #company .company-wrapper .president .president-table table tr th, #company .company-wrapper .president .president-table table tr td {
+    display: block;
+    border-bottom: none;
+  }
+  #company .company-wrapper .president .president-table table tr th {
+    width: 100%;
+  }
+  #company .company-wrapper .president .president-table table tr:last-of-type {
+    border-bottom: 1px solid #333;
+  }
+  #company .company-wrapper .origin .origin-contents h4 {
+    margin-bottom: 2.0rem;
+  }
+  #company .company-wrapper .origin .origin-contents .origin-content-wrapper {
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+  }
+  #company .company-wrapper .origin .origin-contents .origin-content-wrapper .origin-content {
+    display: block;
+  }
+  #company .company-wrapper .origin .origin-contents .origin-content-wrapper .origin-content .origin-txt {
+    margin: 2.0rem 0;
+  }
+  #company .company-wrapper .origin ul li {
+    background-position: 0 0.45rem;
+  }
+  /* access */
+  /*contact*/
+  #contact .headline-inner h1:after {
+    content: "- CONTACT -";
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+  }
+}

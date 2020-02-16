@@ -1,0 +1,301 @@
+@import "settings";
+@import "functions";
+
+// header
+#header {
+	width: 100%;
+	height: 77px;
+	background: #200B00;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: all 2s ease 0s;
+	z-index: 99;
+  .header-inner {
+    @extend .inner;
+    @extend .flex;
+    justify-content: space-between;
+    .hlogo {
+      cursor: pointer;
+      position: relative;
+      a {
+        font-family: 'Kosugi Maru', sans-serif;
+        padding-left: 4.8rem;
+        font-size: 2.5rem;
+        line-height: 7.7rem;
+        background: url("../img/sakura-icon.png") no-repeat center left;
+        background-size: 4.0rem;
+      }
+    }
+    .hnav {
+      ul.hnav-list {
+        li.hnav-item {
+          display: inline-block;
+          padding: 2.6rem 1.3rem;
+          a {
+            list-style: none;
+            &:hover {
+              border-bottom: 0.3rem solid #df5656;
+            }
+          }
+          a.active {
+            border-bottom: 0.3rem solid #df5656;
+          }          
+        }
+      }
+    }
+    .header-contact {
+      ul {
+        li {
+          &:first-of-type {
+            font-size: 2.8rem;
+            a {
+              i {
+                padding-right: 1.0rem;
+              }
+            }
+          }
+          &:last-of-type {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* header-sp */
+#header-sp {
+  display: none;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+  .smenu {
+    padding: 2.6rem 1.0rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 1.6rem;
+    z-index: 99;
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+    .spmenu-icon {
+      display: block;
+      width: 3.5rem;
+      height: 0.3rem;
+      background: #FFFFFF;
+      -webkit-transition: ease 1.0s;
+      transition: ease 1.0s;
+      position: relative;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        margin: 0.8rem 0;
+      }
+      &:nth-of-type(3) {
+        top: 0;
+      }
+    }
+  }
+  .smenu.open {
+    // position: absolute;
+    // top: 0;
+    right: calc(100% - 5.5rem);
+    background-color: pink;
+    .spmenu-icon {
+      -webkit-transition: ease .75s;
+      transition: ease .75s;  
+      &:nth-of-type(1) {
+        top: 1.1rem;
+        // margin-top: 2.0rem;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        top: -1.1rem;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .snav {
+    width: calc(100% - 5.5rem);
+    height: 100%;
+    transform: translate(100%,0);
+    background: #f3f3f3;
+    // overflow: scroll;
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    right: 0;
+    ul.snav-list {
+      li.snav-item {
+        padding: 0 2.0rem;
+        border-bottom: 0.1rem solid #d1dce6;
+        a {
+          padding: 1.0rem 4.0rem;
+          &:hover {
+            background: url("../img/sakura-icon-s.png") no-repeat center left;
+          }
+        }
+      }
+      li.tel {
+        padding: 1.0rem 2.0rem 0 2.0rem;
+        font-size: 2.8rem;
+        a {
+          i {
+            padding-right: 1.0rem;
+          }
+        }
+      }
+      li.hour {
+        padding: 0 2.0rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .snav.open {
+    transform: translate(0,0);
+    -webkit-transition: ease .75s;
+    transition: ease .75s;
+  }
+}
+
+/* main-visual */
+#main-visual {
+  width: 100%;
+  padding-top: 7.7rem;
+  text-align: center;
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        position: relative;
+        h1 {
+          font-family: 'Kosugi Maru', sans-serif;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        a {
+          display: inline-block;
+          margin: 0 auto;
+          padding: 2.0rem;
+          color: #dcfd00;
+          border-radius: 0.5rem;
+          background-color: #252a2c;
+          position: absolute;
+          top: 70%;
+          left: 60%;
+        }
+      }
+      .swiper-slide.account-slide {
+        h1 {
+          color: #921b78;
+        }
+      }
+      .swiper-slide.pharmacy-slide {
+        h1 {
+          color: #08a32f;
+        }
+      }
+      .swiper-slide.legal-slide {
+        h1 {
+          color: #270505;
+        }
+      }
+    }
+  }
+}
+
+/* footer */
+footer {
+  padding-top: 2.0rem;
+  padding-bottom: 2.0rem;
+  background-color: #252a2c;
+  color: #fff;
+  .footer-inner {
+    @extend .inner;
+    .column {
+      border-bottom: 0.1rem solid #555555;
+      position: relative;
+      nav {
+        width: 33.33333%;
+        font-size: 1.6rem;
+        padding: 2.0rem;
+        float: left;
+        .footer-link {
+          margin-bottom: 1.5rem;
+        }
+      }
+      &:after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+      .footer-contact {
+        padding-right: 2.0rem;
+        padding-bottom: 3.5rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        ul {
+          li {
+            &:first-of-type {
+              font-size: 2.8rem;
+              a {
+                i {
+                  padding-right: 1.0rem;
+                }
+              }
+            }
+            &:last-of-type {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    p {
+      margin: 1.5rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+}
+
+/* pagetop */
+.pagetop {
+  display: inline-block;
+  width: 5.0rem;
+  height: 5.0rem;
+  border-radius: 0.5rem;
+  background-color: #df5656;
+  cursor: pointer;
+  position: fixed;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  &:before {
+    content: '';
+    width: 2.0rem;
+    height: 2.0rem;
+    border-top: solid 0.3rem #FFFFFF;
+    border-right: solid 0.3rem #FFFFFF;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 2.0rem;
+    left: 1.5rem;
+  }
+}

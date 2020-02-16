@@ -1,0 +1,198 @@
+@import "settings";
+@import "functions";
+
+/* company */
+#company {
+  @include header-padding;
+  @extend .inner;
+  max-width: 85.0rem;
+  .company-wrapper {
+    padding-top: 2.0rem;
+    padding-bottom: 2.0rem;
+    .profile {
+      margin-bottom: 4.0rem;
+      .profile-table {
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          border-spacing: 0;
+          table-layout: fixed;
+          tr {
+            th,td {
+              padding: 1.0rem 1.5rem;
+              border: 1px solid #333;
+            }
+            th {
+              width: 35%;
+              background-color: #eeeeee;
+            }
+          }
+        }
+      }
+    }
+    .vision {
+      margin-bottom: 4.0rem;
+      .vision-content {
+        .vision-heading {
+          text-align: left;
+          margin-bottom: 0.5rem;
+        }
+        .vision-txt {
+        }
+      }
+    }
+    .president {
+      margin-bottom: 4.0rem;
+      .president-message {
+        margin-bottom: 2.0rem;
+        p {
+          padding-left: 0.5rem;
+        }
+      }
+      .president-table {
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          border-spacing: 0;
+          table-layout: fixed;
+          tr {
+            th,td {
+              padding: 1.0rem 1.5rem;
+              border: 1px solid #333;
+            }
+            th {
+              width: 35%;
+              background-color: #eeeeee;
+              background-color: pink;
+            }
+          }
+        }
+      }
+    }
+    .origin {
+      margin-bottom: 4.0rem;
+      .origin-contents {
+        h4 {
+          text-align: left;
+          margin-bottom: 4.0rem;
+        }
+        .origin-content-wrapper {
+          margin-bottom: 4.0rem;
+          @extend .flex;
+          justify-content: space-between;
+          .origin-content {
+            @extend .flex;
+            flex-direction: column;
+            &:nth-of-type(2n) {
+              flex-direction: column-reverse;
+            }
+            .origin-img {
+              display: inline-block;
+              height: 17.5rem;
+              margin: 0 auto;
+              border-style: none;
+            }
+            .origin-txt {
+              display: inline-block;
+              margin: 6.25rem 0;
+              text-align: center;
+            }
+          }
+        }
+      }
+      ul {
+        margin-bottom: 2.0rem;
+        li {
+          padding-left: 2.25rem;
+          background-image:url("../img/sakura-icon-xs.png");
+          background-repeat:no-repeat;
+          background-position: 0 center;
+        }
+      }
+    }
+  }
+}
+
+/* access */
+#access {
+  @include header-padding;
+  @extend .inner;
+  max-width: 85.0rem;
+  .access-wrapper {
+    padding-top: 2.0rem;
+    padding-bottom: 2.0rem;
+    iframe {
+      margin-bottom: 0.5rem;
+    }
+    .access-txt {
+      margin-bottom: 5.0rem;
+      > ul {
+        ul {
+          margin-bottom: 0.5rem;
+        }
+        > li {
+          &:before {
+            content: "■ ";
+          }
+        }
+      }
+    }
+  }
+}
+
+/*contact*/
+#contact {
+  @include header-padding;
+  .header-img {
+    padding-top: 7.5rem;
+    background: url("../img/contact/header-img.jpg") no-repeat center;
+    background-size: cover;
+  }    
+  .headline-inner {
+    padding: 0 7.5%;    
+    background: pink;
+    h1 {
+      font-family: 'Kosugi Maru', sans-serif;
+      padding-top: 2.0rem;
+      padding-bottom: 2.0rem;
+      color: #2f3132;
+      text-align: left;
+      &:after {
+        content: "- CONTACT -";
+        font-size: 2.0rem;
+        padding-left: 2.0rem;
+        vertical-align: middle;
+      }
+    }
+  }
+  .inner {
+    .ct-form {
+      max-width: 52.0rem;
+      margin: 0 auto;
+      form {
+        input,
+        textarea {
+          width: 100%;
+          max-width: 100%;
+          margin-bottom: 1.6rem;
+          padding: 1.0rem;
+          font-size: 1.6rem;
+          border: 0.15rem solid #ccc;
+          border-radius: 0.4rem;
+          outline: none;
+        }
+        input.ct-btn {
+          background-color: #da6b64;
+          color: #fff;
+          border: 0.2rem solid transparent;
+          box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
+          font-weight: 700;
+          cursor: pointer;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
