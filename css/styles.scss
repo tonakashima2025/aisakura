@@ -80,7 +80,7 @@
     z-index: 99;
     -webkit-transition: ease .5s;
     transition: ease .5s;
-    .spmenu-icon {
+    .smenu-icon {
       display: block;
       width: 3.5rem;
       height: 0.3rem;
@@ -104,7 +104,7 @@
     // top: 0;
     right: calc(100% - 5.5rem);
     background-color: pink;
-    .spmenu-icon {
+    .smenu-icon {
       -webkit-transition: ease .75s;
       transition: ease .75s;  
       &:nth-of-type(1) {
