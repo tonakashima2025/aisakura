@@ -1,6 +1,70 @@
 @media screen and (min-width: 768px) and (max-width: 1219px) {
-  .hnav {
-    display: none;
+
+@import "settings";
+@import "functions";  
+
+// header
+#header {
+  .header-inner {
+    .hlogo {
+      a {
+        font-size: 2.0rem;
+      }
+    }
+    .hnav {
+      display: none;
+      ul.hnav-list {
+        li.hnav-item {
+          a {
+            &:hover {
+            }
+          }
+          a.active {
+          }          
+        }
+      }
+    }
+    .header-contact {
+      display: none;
+      ul {
+        li {
+          &:first-of-type {
+            a {
+              i {
+              }
+            }
+          }
+          &:last-of-type {
+          }
+        }
+      }
+    }
   }
+}
+
+/* header-sp */
+#header-sp {
+  display: block;
+}
+
+
+/* main-visual */
+#main-visual {
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        h1 {
+          width: 95%;
+        }
+        a {
+          padding: 0.5rem 2.0rem;
+          top: 72.5%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}
   
 }
